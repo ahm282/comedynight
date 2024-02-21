@@ -10107,3 +10107,117 @@ header.masthead .bg-circle-4 {
   -o-object-position: center;
      object-position: center;
 }
+
+.progress-div {
+  height: 0.35em;
+  display: none;
+}
+.progress-div .progress-bar {
+  background-image: linear-gradient(to left, #e7af00, #ffd03f);
+  width: 0;
+  border-radius: 1px;
+}
+
+.gmaps {
+  height: 40vh;
+  width: 100%;
+  border: 2px solid #fcb514;
+  filter: drop-shadow(0 0 1px rgba(252, 181, 20, 0.5));
+}
+
+/* ------ Scroll to top button ------ */
+.btnScrollToTop {
+  background-color: #3e2b2e;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  transform: translateY(100px);
+  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@media (max-width: 767.98px) {
+  .btnScrollToTop {
+    bottom: 35px;
+    right: 20px;
+  }
+}
+.btnScrollToTop:hover {
+  background-color: #4d3539;
+}
+.btnScrollToTop .fa-arrow-up {
+  color: #fcb514;
+  pointer-events: none;
+}
+
+.showBtn {
+  display: block;
+  transform: translateY(-40px);
+}
+
+::-moz-selection {
+  background: #3e2b2e;
+  color: #fcb514;
+}
+
+::selection {
+  background: #3e2b2e;
+  color: #fcb514;
+}
+
+.ticket-card {
+  flex-grow: 1;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    height: 100%;
+    max-height: 300px;
+  }
+}
+
+#qrcode {
+  max-width: 250px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  min-height: 30vh;
+}
+@media screen and (max-width: 768px) {
+  .logos {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.logo {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 180px;
+    margin-bottom: 1em;
+  }
+}
+
+.cr {
+  color: rgb(115, 115, 115);
+}
+
+.custom-bullet-list {
+  list-style-type: none; /* Removes default bullet style */
+}
+.custom-bullet-list li {
+  font-weight: 500;
+  padding-left: 25px; /* Add padding to accommodate the marker */
+  background: url("../assets/img/marker.png") no-repeat left center; /* Add PNG marker as background */
+  background-size: 20px 20px; /* Resize the marker */
+}
