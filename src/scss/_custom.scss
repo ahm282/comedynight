@@ -1,0 +1,48 @@
+.overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.overlay-darker {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.daffodils {
+    background-image: url("/assets/img/daffodils.jpg");
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+        padding-inline: 2em;
+    }
+}
+
+.figure-img {
+    min-width: 90%;
+    min-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}

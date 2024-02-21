@@ -1,0 +1,97 @@
+//
+// Masthead
+//
+
+header.masthead {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    // padding-top: calc(7rem + 72px);
+    // padding-bottom: 7rem;
+    background: url("/assets/img/vert.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    color: $orange;
+
+    .masthead-content {
+        z-index: 1;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .masthead-heading {
+            font-size: 4rem;
+        }
+
+        .masthead-subheading {
+            font-size: 2rem;
+        }
+    }
+
+    .bg-circle {
+        z-index: 0;
+        position: absolute;
+        border-radius: 100%;
+        background: linear-gradient(0deg, $primary 0%, $secondary 100%);
+    }
+
+    .bg-circle-1 {
+        height: 90rem;
+        width: 90rem;
+        bottom: -55rem;
+        left: -55rem;
+    }
+
+    .bg-circle-2 {
+        height: 50rem;
+        width: 50rem;
+        top: -25rem;
+        right: -25rem;
+    }
+
+    .bg-circle-3 {
+        height: 20rem;
+        width: 20rem;
+        bottom: -10rem;
+        right: 5%;
+    }
+
+    .bg-circle-4 {
+        height: 30rem;
+        width: 30rem;
+        top: -5rem;
+        right: 35%;
+    }
+}
+
+#overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        // padding-top: calc(10rem + 55px);
+        // padding-bottom: 10rem;
+
+        .masthead-content {
+            .masthead-heading {
+                font-size: 6rem;
+            }
+
+            .masthead-subheading {
+                font-size: 4rem;
+            }
+        }
+    }
+}
