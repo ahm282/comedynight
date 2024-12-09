@@ -19,24 +19,42 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body id="page-top"><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=2.29.1'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script><script async="" src="/browser-sync/browser-sync-client.js?v=2.29.1"></script>
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container px-5">
-            <a class="navbar-brand me-2" href="#page-top"><i class="fa-solid fa-masks-theater me-2"></i><span>Comedy
+            <a class="navbar-brand me-2" href="#page-top"><svg class="svg-inline--fa fa-masks-theater me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="masks-theater" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M74.6 373.2c41.7 36.1 108 82.5 166.1 73.7c6.1-.9 12.1-2.5 18-4.5c-9.2-12.3-17.3-24.4-24.2-35.4c-21.9-35-28.8-75.2-25.9-113.6c-20.6 4.1-39.2 13-54.7 25.4c-6.5 5.2-16.3 1.3-14.8-7c6.4-33.5 33-60.9 68.2-66.3c2.6-.4 5.3-.7 7.9-.8l19.4-131.3c2-13.8 8-32.7 25-45.9C278.2 53.2 310.5 37 363.2 32.2c-.8-.7-1.6-1.4-2.4-2.1C340.6 14.5 288.4-11.5 175.7 5.6S20.5 63 5.7 83.9C0 91.9-.8 102 .6 111.8L24.8 276.1c5.5 37.3 21.5 72.6 49.8 97.2zm87.7-219.6c4.4-3.1 10.8-2 11.8 3.3c.1 .5 .2 1.1 .3 1.6c3.2 21.8-11.6 42-33.1 45.3s-41.5-11.8-44.7-33.5c-.1-.5-.1-1.1-.2-1.6c-.6-5.4 5.2-8.4 10.3-6.7c9 3 18.8 3.9 28.7 2.4s19.1-5.3 26.8-10.8zM261.6 390c29.4 46.9 79.5 110.9 137.6 119.7s124.5-37.5 166.1-73.7c28.3-24.5 44.3-59.8 49.8-97.2l24.2-164.3c1.4-9.8 .6-19.9-5.1-27.9c-14.8-20.9-57.3-61.2-170-78.3S299.4 77.2 279.2 92.8c-7.8 6-11.5 15.4-12.9 25.2L242.1 282.3c-5.5 37.3-.4 75.8 19.6 107.7zM404.5 235.3c-7.7-5.5-16.8-9.3-26.8-10.8s-19.8-.6-28.7 2.4c-5.1 1.7-10.9-1.3-10.3-6.7c.1-.5 .1-1.1 .2-1.6c3.2-21.8 23.2-36.8 44.7-33.5s36.3 23.5 33.1 45.3c-.1 .5-.2 1.1-.3 1.6c-1 5.3-7.4 6.4-11.8 3.3zm136.2 15.5c-1 5.3-7.4 6.4-11.8 3.3c-7.7-5.5-16.8-9.3-26.8-10.8s-19.8-.6-28.7 2.4c-5.1 1.7-10.9-1.3-10.3-6.7c.1-.5 .1-1.1 .2-1.6c3.2-21.8 23.2-36.8 44.7-33.5s36.3 23.5 33.1 45.3c-.1 .5-.2 1.1-.3 1.6zM530 350.2c-19.6 44.7-66.8 72.5-116.8 64.9s-87.1-48.2-93-96.7c-1-8.3 8.9-12.1 15.2-6.7c23.9 20.8 53.6 35.3 87 40.3s66.1 .1 94.9-12.8c7.6-3.4 16 3.2 12.6 10.9z"></path></svg><!-- <i class="fa-solid fa-masks-theater me-2"></i> Font Awesome fontawesome.com --><span>Comedy
                     Tegen Kanker</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#line-up">Line-up</a></li>
                     <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Locatie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Tickets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">FAQ's</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#locatie">Locatie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ's</a></li>
                 </ul>
             </div>
+        </div>
+        <!-- Progress bar -->
+        <div id="progress-div" class="progress-div position-fixed top-0 left-0 w-100 bg-dark" style="display: block;">
+            <div id="progress-bar" class="progress-bar bg-primary w-0 h-100" style="width: 23.3409%;"></div>
         </div>
     </nav>
     <!-- Header-->
@@ -46,89 +64,86 @@
             <div class="container px-5 pb-4">
                 <h1 class="masthead-heading mb-0">Comedy Tegen Kanker</h1>
                 <h2 class="masthead-subheading mb-0 mt-2">Lach mee voor het goede doel 💛✨</h2>
-                <a class="btn btn-primary btn-xl rounded-pill mt-5 text-secondary" href=" #scroll">Koop Tickets</a>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5 text-secondary" href=" #">Koop Tickets</a>
             </div>
         </div>
     </header>
-    <!-- Content section 1-->
-    <section id="scroll">
+    <!-- Avond vol humor -->
+    <section id="avond-vol-humor">
         <div class="container p-4 border-bottom">
             <div class="row pb-4">
                 <div class="col-lg-6 order-lg-1">
-                    <div>
-                        <h2 class="display-4 fw-semibold my-3">Een avond vol humor</h2>
-                        <div class="fs-5 pe-2">
-                            <p>Met veel plezier nodigen we je uit voor een avond vol humor, hartelijkheid en hilariteit!
-                            </p>
-                            <p>Sluit je aan bij "Comedy Tegen Kanker", een speciale comedy-avond waarbij elke lach
-                                bijdraagt aan een prachtig doel: Kom Op Tegen Kanker 💛</p>
-                        </div>
+                    <h2 class="display-4 fw-semibold my-4">Een avond vol humor</h2>
+                    <div class="fs-5 pe-2 pt-lg-5">
+                        <p>Met veel plezier nodigen we je uit voor een onvergetelijke avond vol humor,
+                            hartelijkheid en hilariteit!
+                        </p>
+                        <p>Sluit je aan bij "Comedy Tegen Kanker", een speciale comedy-avond waar elke
+                            lach niet alleen je humeur verbetert, maar ook bijdraagt aan een prachtig
+                            doel: Kom Op Tegen Kanker. 💛</p>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-2">
-                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/laugh-neon.jpg"
-                            alt="Laugh written in neon" />
+                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/laugh-neon.jpg" alt="Laugh written in neon">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Content section 2-->
-    <section id="scroll">
+    <!-- Wat kan je verwachten? -->
+    <section id="verwachtingen">
         <div class="container p-4 border-bottom">
             <div class="row pb-4">
-                <div class="col-lg-6 order-lg-1">
-                    <div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="px-4">
                         <h2 class="display-4 fw-semibold my-3">Wat kan je verwachten?</h2>
-                        <div class="fs-5 pe-2">
-                            <p>Een onvergetelijke avond gevuld met optredens van topcomedians. Zij staan klaar om je te
+                        <div class="fs-5 ps-lg-3 pt-lg-4">
+                            <p>Een bijzondere avond gevuld met optredens van topcomedians. Zij staan klaar om je te
                                 vermaken, te verrassen en
                                 vooral veel te laten lachen.</p>
                             <p>Tussen de optredens kan u genieten van versnaperingen en drankjes.</p>
-                            <p>Er is geen dresscode. Kom zoals je bent, maar een glimlach is verplicht! 😉</p>
+                            <p>Er is geen dresscode. Kom zoals je bent, maar een glimlach is wel, verplicht! 😉</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2">
-                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/show.jpg"
-                            alt="Crowd in theater" />
+                <div class="col-lg-6 order-lg-1">
+                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/show.jpg" alt="Crowd in theater">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Content section 3-->
-    <section id="scroll">
+    <!-- Hoe bijdragen -->
+    <section id="bijdragen">
         <div class="container p-4 border-bottom">
             <div class="row pb-4">
                 <div class="col-lg-6 order-lg-1">
                     <div>
                         <h2 class="display-4 fw-semibold my-3">Hoe draag je bij?</h2>
-                        <div class="fs-5">
-                            <p>Alle opbrengsten van de avond gaan naar Kom Op Tegen Kanker.
+                        <div class="fs-5 mt-lg-5">
+                            <p>Alle opbrengsten van de avond gaan naar Kom Op Tegen Kanker.</p>
+                            <p>Door jouw ticket aan te schaffen, maak je niet alleen deel uit van een avond vol 
+                                entertainment en verbinding, maar steun je ook een uiterst belangrijk
+                                doel: de strijd tegen kanker.
                             </p>
-                            <p>Met jouw ticket draag je niet alleen bij aan een onvergetelijke avond, maar steun je ook
-                                belangrijk onderzoek naar en de
-                                strijd tegen kanker.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-2">
-                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/community.jpg"
-                            alt="Two hands reaching for each other" />
+                    <div class="mt-4"><img class="img-fluid rounded shadow-sm" src="assets/img/community.jpg" alt="Two hands reaching for each other">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Content section 3-->
-    <section id="scroll">
+    <!-- Uitnodiging -->
+    <section id="uitnodiging">
         <div class="daffodils position-relative">
             <div class="overlay-darker"></div>
             <div class="py-4 px-3 text-white position-relative">
                 <p class="mb-2">Mis deze unieke kans niet om deel uit te maken van iets bijzonders. ✨</p>
                 <p class="mb-2">Kom lachen, genieten en steun een prachtig doel.</p>
-                <p class="mb-2">Samen kunnen we een <span class="fw-bold">verschil maken!</span></p>
+                <p class="mb-2">Samen kunnen we <span class="fw-bold">een verschil maken!</span></p>
                 <p class="mb-2">We kijken ernaar uit je te verwelkomen op "Comedy Tegen Kanker" 👋🏻</p>
                 <div class="groet mt-4 py-2">
                     <p class="m-0">Met warme groeten,</p>
@@ -137,80 +152,200 @@
             </div>
         </div>
     </section>
-    <!-- Content section 4-->
-    <section id="scroll">
-        <div class="container px-5 border-bottom" id="line-up">
+    <!-- Line up -->
+    <section id="line-up">
+        <div class="container px-5 border-bottom">
             <div class="row gx-5 py-4">
                 <h2 class="display-4 fw-semibold mt-3 mb-4">Line-up</h2>
-                <div class="d-flex justify-content-between flex-column flex-lg-row gap-lg-5 pt-2 pb-4">
+                <div class="d-flex justify-content-between flex-column flex-lg-row gap-lg-5 py-2 py-lg-4">
                     <div class="d-flex flex-column mt-3 mt-lg-0">
                         <figure class="figure">
-                            <img src="assets/img/lineup/thomas-smith.jpg" class="figure-img img-fluid rounded"
-                                alt="Portrait of Thomas Smith">
-                            <figcaption class="figure-caption">&copy;KREW Collective</figcaption>
+                            <img src="assets/img/lineup/Koen-Dewulf.jpg" class="figure-img img-fluid rounded" alt="Portret van Koen Dewulf">
+                            <figcaption class="figure-caption">© Koen Dewulf</figcaption>
                         </figure>
-                        <h3 class="text-center">Thomas Smith</h3>
+                        <h3 class="text-center pt-3 pt-lg-3">Koen Dewulf</h3>
                     </div>
                     <div class="d-flex flex-column mt-5 mt-lg-0">
                         <figure class="figure">
-                            <img src="assets/img/lineup/mc-tom-cools.jpg" class="figure-img img-fluid rounded"
-                                alt="A generic square placeholder image with rounded corners in a figure.">
-                            <figcaption class="figure-caption">&copy;Albert Loos</figcaption>
+                            <img src="assets/img/lineup/Lissens-Johan.jpg" class="figure-img img-fluid rounded" alt="Portret van Roosje Pertz">
+                            <figcaption class="figure-caption">© Lissens Johan Photography</figcaption>
                         </figure>
-                        <h3 class="text-center">MC Tom Cools</h3>
+                        <h3 class="text-center pt-3 pt-lg-3">Roosje Pertz</h3>
                     </div>
                     <div class="d-flex flex-column mt-5 mt-lg-0">
                         <figure class="figure">
-                            <img src="assets/img/lineup/sergej.jpg" class="figure-img img-fluid rounded"
-                                alt="A generic square placeholder image with rounded corners in a figure.">
-                            <figcaption class="figure-caption">&copy;Britt Ryckebosch</figcaption>
+                            <img src="assets/img/lineup/Yannick-Noben.jpg" class="figure-img img-fluid rounded" alt="Portret van Yannick Noben">
+                            <figcaption class="figure-caption">© Yannick Noben</figcaption>
                         </figure>
-                        <h3 class="text-center">Sergej Lopouchanski</h3>
+                        <h3 class="text-center pt-3 pt-lg-3">Yannick Noben</h3>
                     </div>
                 </div>
             </div>
-    </section>
-    <!-- Content section 4-->
-    <section id="scroll">
-        <div class="container px-5 border-bottom" id="agenda">
-            <div class="row gx-5 py-5">
-                <div class="col-lg-6 order-lg-2">
-                    <div><img class="img-fluid rounded" src="/assets/img/calendar.jpg" alt="Calendar" />
-                    </div>
-                </div>
+    </div></section>
+    <!-- Agenda -->
+    <section id="agenda">
+        <div class="container px-5 py-5 border-bottom">
+            <div class="row gx-5">
                 <div class="col-lg-6 order-lg-1">
-                    <h2 class="display-4 fw-semibold my-3">Save the date!</h2>
-                    <ul class="list-group list-group-flush mt-4 fs-5">
+                    <h2 class="display-4 fw-semibold mb-3">Save the date!</h2>
+                    <ul class="list-group list-group-flush mb-3 fs-5">
                         <li class="list-group-item px-0">
-                            <div class="d-flex justify-content-between"><span>Datum:</span><span
-                                    class="ms-4 fw-semibold">Zaterdag, 27 april
-                                    2024</span></div>
-                        <li class="list-group-item px-0">
-                            <div class="d-flex justify-content-between"><span>Deuren open:</span><span
-                                    class="ms-4 fw-semibold">19:00 uur</span>
+                            <div class="d-flex justify-content-between"><span>Datum:</span><span class="ms-4 fw-semibold">Donderdag, 20 maart
+                                    2025</span></div>
+                        </li><li class="list-group-item px-0">
+                            <div class="d-flex justify-content-between"><span>Deuren open:</span><span class="ms-4 fw-semibold">19:00 uur</span>
                             </div>
                         </li>
                         <li class="list-group-item px-0">
-                            <div class="d-flex justify-content-between"><span>Aanvang show:</span><span
-                                    class="ms-4 fw-semibold">20:00
+                            <div class="d-flex justify-content-between"><span>Aanvang show:</span><span class="ms-4 fw-semibold">20:00
                                     uur</span>
                             </div>
                         </li>
                     </ul>
                 </div>
+                <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
+                    <div><img class="img-fluid rounded" src="/assets/img/calendar.jpg" alt="Calendar">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Location -->
+    <section id="locatie">
+        <div class="container px-5 py-5 border-bottom">
+            <div class="row gx-5">
+                <div class="col-lg-6 order-lg-2 h-100">
+                    <h2 class="display-4 fw-semibold mb-3">Locatie</h2>
+                    <div class="mb-3 fs-5 d-flex flex-column justify-content-between">
+                        <div class="lh-1 my-2 fs-4">
+                            <p>Auditorium 1</p>
+                            <p>Thomas More Hogeschool - Campus Geel</p>
+                        </div>
+                        <p class="mt-lg-1 fs-4 fw-semibold">Kleinhoefstraat 4, 2440 Geel</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 mt-2 mt-lg-0 mt-lg-0">
+                    <iframe class="gmaps d-block col-11 col-md-3 rounded-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.1542159454893!2d4.958824077024323!3d51.16094623595332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14c011b4bcb87%3A0xb5b970e9f2a6ce42!2sThomas%20More%20-%20Campus%20Geel!5e0!3m2!1snl!2sbe!4v1684021536374!5m2!1snl!2sbe" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tickets -->
+    <section id="tickets">
+        <div class="container px-5 pb-5 pt-4 border-bottom">
+            <div class="row gx-5">
+                <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
+                    <img class="img-fluid rounded" src="/assets/img/ticket.jpg" alt="Ticket">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-4 fw-semibold mt-4 mt-lg-0">Tickets</h2>
+                    <!-- Standaard Ticket -->
+                    <div class="card-container col-lg-8 d-flex align-items-center justify-content-center py-4 px-2">
+                        <div class="card d-lg-flex col-lg-8 ticket-card">
+                            <h5 class="card-header text-center text-primary bg-secondary">Standaard Ticket</h5>
+                            <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                                <h5 class="card-title fs-3 my-3 mb-lg-0 text-center">€15 / ticket</h5>
+                                <ul class="custom-bullet-list">
+                                    <li class="">Enkel verkrijgbaar in VVK</li>
+                                    <li class="">Aan te duiden plaatsen</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary text-secondary w-50">Koop ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section id="FAQ">
+        <div class="container px-5 pb-5 pt-3 border-bottom">
+            <div class="row gx-5">
+                <h2 class="display-4 fw-semibold mt-4 mt-lg-0">FAQ</h2>
+                <!-- Standaard Ticket -->
+                <div class="accordion" id="accordionPanels">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Is er kassaverkoop?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <strong>Er is geen kassaverkoop mogelijk</strong>, enkel tickets te verkrijgen via het
+                                online platform. (Zie "<a href="#tickets" class="fw-semibold text-secondary">Tickets</a>") Wees
+                                zeker op tijd, de plaatsen zijn beperkt.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Is er een vestiaire aanwezig?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Er zal een vestiaire voorzien worden</strong> zodat u gemakkelijk plaats kan
+                                nemen in onze zaal.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Waar kan ik parkeren?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                De campus beschikt over een ruime <strong>GRATIS PARKING</strong> van bijna
+                                1000
+                                plaatsen. Bekijk zeker ook even ons plannetje dat je terugvindt bij de "<a href="#locatie" class="fw-semibold text-secondary">Locatie</a>".
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Share -->
+    <section id="delen">
+        <div class="container px-5 pb-5 pt-4 border-bottom">
+            <div class="row gx-5">
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-4 fw-semibold mt-4 mt-lg-0">Maak mee het verschil!</h2>
+                    <div class="CTA mt-4">
+                        <p class="fs-5">Deel deze QR-code en draag bij aan de strijd tegen kanker.</p>
+                        <p class="fs-5">Jouw steun maakt een verschil.</p>
+                        <p class="fs-5">Laat de kracht van solidariteit zien! Elke lach telt! 💛</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0 d-flex justify-content-center">
+                    <img class="img-fluid rounded w-75 w-lg-50" src="/assets/img/qr.png" alt="QR code">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container logos p-5">
+        <img src="/assets/img/TM/thomasmore_logo_oranje.svg" alt="Thomas More logo" class="logo">
+        <img src="./assets/img/KOTK/KOTK_logo_eenactievoor_Horizontaal.png" alt="Een actie voor Kom Op Tegen Kanker" class="logo">
+        <img src="/assets/img/TM/ku_leuven.png" alt="KU Leuven logo" class="logo">
+    </div>
+    <!-- Back to top -->
+    <button id="btnScrollToTop" class="btnScrollToTop rounded-circle border-0" type="button">
+        <svg class="svg-inline--fa fa-arrow-up fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-up fa-lg"></i> Font Awesome fontawesome.com --><span class="d-none">Scroll to top!</span>
+    </button>
     <!-- Footer-->
-    <footer class="py-5 bg-black">
+    <footer class="py-4 bg-black">
         <div class="container px-5">
-            <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p>
+            <p class="cr m-0 text-center small">Made with 💛 by <a href="https://ahmedmahgoub.be/">Ahmed
+                    Mahgoub</a> - © 2024-2025
+            </p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-</body>
-
 </html>

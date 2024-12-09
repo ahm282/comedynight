@@ -1,5 +1,3 @@
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
 const scrollToTopBtn = document.querySelector("#btnScrollToTop");
 
 window.addEventListener("scroll", () => {
